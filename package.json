@@ -2,6 +2,7 @@
   "name": "react-amplify-sns",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@aws-amplify/core": "^6.0.19",
     "@aws-amplify/ui-react": "^6.1.5",
@@ -20,10 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
+    "serve": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.5"
   }
 }
