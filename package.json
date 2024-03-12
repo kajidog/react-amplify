@@ -23,9 +23,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
-    "vrt": "start-server-and-test preview-storybook http://localhost:8080 'playwright test ./.storybook --update-snapshots'",
     "preview-storybook": "http-server storybook-static",
-    "prepreview-storybook": "storybook build"
+    "prepreview-storybook": "storybook build",
+    "serve-storybook": "http-server storybook-static -p 8080 &",
+    "test-playwright": "playwright test --reporter=html",
+    "vrt": "npm run build-storybook && npm run serve-storybook && npm run test-playwright"
   },
   "eslintConfig": {
     "extends": [
