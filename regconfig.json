@@ -1,0 +1,14 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "./playwright/playwright.spec.ts-snapshots",
+    "thresholdRate": 0.5,
+    "addIgnore": true,
+    "ximgdiff": {
+      "invocationType": "client"
+    }
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": true
+  }
+}
