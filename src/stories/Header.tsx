@@ -34,7 +34,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             />
           </g>
         </svg>
-        <h1>ゴミカス死ね！！！！</h1>
+        <h1>acb</h1>
       </div>
       <div>
         {user ? (

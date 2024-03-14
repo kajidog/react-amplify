@@ -2,7 +2,7 @@
   "core": {
     "workingDir": ".reg",
     "actualDir": "./playwright/playwright.spec.ts-snapshots",
-    "thresholdRate": 0.5,
+    "thresholdRate": 0.1,
     "addIgnore": true,
     "ximgdiff": {
       "invocationType": "client"

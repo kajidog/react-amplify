@@ -45,3 +45,7 @@ amplifytools.xcconfig
 .reg
 storybook-static
 playwright-report
+playwright.spec.ts-snapshots
+/playwright/*
+!/playwright/playwright.spec.ts
+!/playwright/skipVrtStories.json
