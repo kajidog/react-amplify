@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Badge, Flex, Text } from "@aws-amplify/ui-react";
+import { Badge, Flex, Text, View } from "@aws-amplify/ui-react";
 export default function Stat(props) {
   const {
     callback,
@@ -17,16 +17,16 @@ export default function Stat(props) {
     ...rest
   } = props;
   return (
-    <Flex
-      gap="16px"
-      direction="column"
-      width="unset"
-      height="unset"
-      justifyContent="flex-start"
-      alignItems="flex-start"
+    <View
+      width="201px"
+      height="129px"
+      display="block"
+      gap="unset"
+      alignItems="unset"
+      justifyContent="unset"
       overflow="hidden"
       position="relative"
-      padding="32px 32px 32px 32px"
+      padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
       {...getOverrideProps(overrides, "Stat")}
       {...rest}
@@ -45,8 +45,11 @@ export default function Stat(props) {
         height="unset"
         gap="unset"
         alignItems="unset"
-        shrink="0"
-        position="relative"
+        position="absolute"
+        top="32px"
+        left="73px"
+        transformOrigin="top left"
+        transform="rotate(180deg)"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Sales"
@@ -59,8 +62,9 @@ export default function Stat(props) {
         height="unset"
         justifyContent="flex-start"
         alignItems="flex-start"
-        shrink="0"
-        position="relative"
+        position="absolute"
+        top="67px"
+        left="32px"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 424")}
       >
@@ -96,6 +100,6 @@ export default function Stat(props) {
           {...getOverrideProps(overrides, "Badge")}
         ></Badge>
       </Flex>
-    </Flex>
+    </View>
   );
 }

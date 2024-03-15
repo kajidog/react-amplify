@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { BadgeProps, FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { BadgeProps, FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 import { SyntheticEvent } from "react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -19,13 +19,13 @@ export declare type Variant = {
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type StatOverridesProps = {
-    Stat?: PrimitiveOverrideProps<FlexProps>;
+    Stat?: PrimitiveOverrideProps<ViewProps>;
     Sales?: PrimitiveOverrideProps<TextProps>;
     "Frame 424"?: PrimitiveOverrideProps<FlexProps>;
     "8,260"?: PrimitiveOverrideProps<TextProps>;
     Badge?: PrimitiveOverrideProps<BadgeProps>;
 } & EscapeHatchProps;
-export declare type StatProps = React.PropsWithChildren<Partial<FlexProps> & {
+export declare type StatProps = React.PropsWithChildren<Partial<ViewProps> & {
     callback?: (event: SyntheticEvent) => void;
     initialValue?: String;
     pasent?: String;
