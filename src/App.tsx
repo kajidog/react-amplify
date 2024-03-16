@@ -20,7 +20,7 @@ const App: React.FC = () => {
     <div>
       <LayoutComponent>
         <p>count: {count}</p>
-        <Stat initialValue="callback" callback={handleCallback} pasent={"+" + count + "%"} />
+        <Stat />
         <Button onClick={handleReset} >reset</Button>
       </LayoutComponent>
     </div>

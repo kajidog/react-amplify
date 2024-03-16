@@ -9,13 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Badge, Flex, Text, View } from "@aws-amplify/ui-react";
 export default function Stat(props) {
-  const {
-    callback,
-    initialValue = "221.1",
-    pasent,
-    overrides,
-    ...rest
-  } = props;
+  const { overrides, ...rest } = props;
   return (
     <View
       width="201px"
@@ -72,7 +66,7 @@ export default function Stat(props) {
           fontFamily="Inter"
           fontSize="24px"
           fontWeight="400"
-          color="rgba(13,26,38,1)"
+          color="rgba(0,133,255,1)"
           lineHeight="29.045454025268555px"
           textAlign="center"
           display="block"
@@ -86,8 +80,7 @@ export default function Stat(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children={initialValue}
-          onClick={callback}
+          children="8,260"
           {...getOverrideProps(overrides, "8,260")}
         ></Text>
         <Badge
@@ -96,7 +89,7 @@ export default function Stat(props) {
           shrink="0"
           size="default"
           variation="success"
-          children={pasent}
+          children="+17%"
           {...getOverrideProps(overrides, "Badge")}
         ></Badge>
       </Flex>

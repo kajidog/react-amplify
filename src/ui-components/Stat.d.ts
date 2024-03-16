@@ -6,7 +6,6 @@
 
 import * as React from "react";
 import { BadgeProps, FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
-import { SyntheticEvent } from "react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -26,10 +25,6 @@ export declare type StatOverridesProps = {
     Badge?: PrimitiveOverrideProps<BadgeProps>;
 } & EscapeHatchProps;
 export declare type StatProps = React.PropsWithChildren<Partial<ViewProps> & {
-    callback?: (event: SyntheticEvent) => void;
-    initialValue?: String;
-    pasent?: String;
-} & {
     overrides?: StatOverridesProps | undefined | null;
 }>;
 export default function Stat(props: StatProps): React.ReactElement;

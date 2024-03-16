@@ -1,15 +1,15 @@
 {
-  "dev": {
+  "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-reactamplify-dev-183305-authRole",
-      "UnauthRoleArn": "arn:aws:iam::058264321056:role/amplify-reactamplify-dev-183305-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::058264321056:role/amplify-reactamplify-dev-183305-authRole",
+      "AuthRoleName": "amplify-reactfigma-staging-62608-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264321056:role/amplify-reactfigma-staging-62608-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264321056:role/amplify-reactfigma-staging-62608-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-reactamplify-dev-183305-deployment",
-      "UnauthRoleName": "amplify-reactamplify-dev-183305-unauthRole",
-      "StackName": "amplify-reactamplify-dev-183305",
-      "StackId": "arn:aws:cloudformation:us-east-1:058264321056:stack/amplify-reactamplify-dev-183305/08e7b0a0-e2af-11ee-8525-123f5209faef",
-      "AmplifyAppId": "djc8vt9uqj3iv"
+      "DeploymentBucketName": "amplify-reactfigma-staging-62608-deployment",
+      "UnauthRoleName": "amplify-reactfigma-staging-62608-unauthRole",
+      "StackName": "amplify-reactfigma-staging-62608",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264321056:stack/amplify-reactfigma-staging-62608/139273a0-e35e-11ee-8da5-0e02eff3a963",
+      "AmplifyAppId": "doxz8x7wnmetn"
     }
   }
 }
