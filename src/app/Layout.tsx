@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react"
 import {
     SideBar,
-} from './ui-components';
+} from '../ui-components';
 
 
 export type LayoutProps = {

@@ -1,7 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
-import App from "./App"
+import App from "./app/App"
+
+import { Provider } from 'react-redux';
+import { store } from './app/store';
 
 import config from "./aws-exports";
 
@@ -14,9 +17,11 @@ Amplify.configure(config);
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 )
