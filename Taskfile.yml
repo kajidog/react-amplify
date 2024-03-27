@@ -1,0 +1,19 @@
+version: '3'
+
+vars:
+  APP_NAME: 'app'
+
+
+tasks:
+  init:
+    cmds:
+      - docker compose -f compose.init.yml up
+  up:
+    cmds:
+      - docker compose up
+  up-d:
+    cmds:
+      - docker compose up -d
+  sh:
+    cmds:
+      - docker compose exec {{ .APP_NAME }} sh

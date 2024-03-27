@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      target: frontend
+    command: "npm run start"
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: development
+    ports:
+      - 5173:5173
+      - 4242:4242

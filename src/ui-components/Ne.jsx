@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Button, Flex, TextAreaField } from "@aws-amplify/ui-react";
 export default function Ne(props) {
-  const { overrides, ...rest } = props;
+  const { test, overrides, ...rest } = props;
   return (
     <Flex
       gap="51px"
@@ -53,7 +53,7 @@ export default function Ne(props) {
         width="300px"
         height="unset"
         shrink="0"
-        label="Label"
+        label={test}
         placeholder="Placeholder"
         size="default"
         isDisabled={false}
