@@ -5,7 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, TextAreaFieldProps } from "@aws-amplify/ui-react";
+import { NeProps } from "./Ne";
+import { CollectionProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,16 +18,17 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type NeOverridesProps = {
-    Ne?: PrimitiveOverrideProps<FlexProps>;
-    TextAreaField38474850?: PrimitiveOverrideProps<TextAreaFieldProps>;
-    TextAreaField38474864?: PrimitiveOverrideProps<TextAreaFieldProps>;
-    TextAreaField38474857?: PrimitiveOverrideProps<TextAreaFieldProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+export declare type NeCollectionOverridesProps = {
+    NeCollection?: PrimitiveOverrideProps<CollectionProps>;
+    Ne?: NeProps;
 } & EscapeHatchProps;
-export declare type NeProps = React.PropsWithChildren<Partial<FlexProps> & {
-    test?: String;
+export declare type NeCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: (collectionItem: {
+        item: any;
+        index: number;
+    }) => NeProps;
 } & {
-    overrides?: NeOverridesProps | undefined | null;
+    overrides?: NeCollectionOverridesProps | undefined | null;
 }>;
-export default function Ne(props: NeProps): React.ReactElement;
+export default function NeCollection(props: NeCollectionProps): React.ReactElement;

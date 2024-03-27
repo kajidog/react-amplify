@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+      target: frontend
+    volumes:
+      - .:/app
+    command: "npm i"
