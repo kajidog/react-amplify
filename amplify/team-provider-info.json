@@ -10,6 +10,12 @@
       "StackName": "amplify-reactamplify-staging-74037",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:058264321056:stack/amplify-reactamplify-staging-74037/23914310-eb44-11ee-9d76-06a8a3ff0101",
       "AmplifyAppId": "dpbnxj81tbqz5"
+    },
+    "categories": {
+      "auth": {
+        "reactamplify31c70eac": {},
+        "reactamplify": {}
+      }
     }
   }
 }
